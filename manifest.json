@@ -6,15 +6,13 @@
 
   "description": "Extract all URLS used behind the scene",
 
-  "icons": {
-    "48": "icons/sahara.jpg"
+  "background": {
+    "scripts": ["extractor.js"]
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["extractor.js"]
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/sahara.jpg"
     }
-  ]
-
+  }
 }
