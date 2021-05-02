@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "URLsExtractor",
+  "version": "1.0",
+
+  "description": "Extract all URLS used behind the scene",
+
+  "icons": {
+    "48": "icons/sahara.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["extractor.js"]
+    }
+  ]
+
+}
